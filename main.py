@@ -31,15 +31,15 @@ class MainWindow(Tk):
         self.exitBtn = Button(self.toolBar, text="\u26cc", bd=0)
         self.exitBtn.pack(side="right", ipadx=15)
 
-        self.textLabel = Label(self, font=("Earwig Factory", 130), bg="#1a1e1f", fg="#e0f9ff")
-        self.textLabel.pack()
-
-        self.typeButton = Button(self, text="Text ändern", font=("Eraser", 30),fg="#e0f9ff", bg="#1a1e1f", bd=0)
-        self.typeButton.pack(side="bottom", pady=50)
+        self.typeButton = Button(self, text="Text ändern", font=("Eraser", 30), fg="#e0f9ff", bg="#1a1e1f", bd=0)
+        self.typeButton.pack(side="bottom", pady=30)
 
         self.textEntry = Entry(self, font=("Eraser", 30))
         self.textEntry.pack(side="bottom", ipadx=30)
         self.textEntry.insert(0, "Text Eingabe")
+
+        self.textLabel = Label(self, font=("Earwig Factory", 130), bg="#1a1e1f", fg="#e0f9ff")
+        self.textLabel.pack()
 
         self.infoLabel = Label(self, text="Der Text muss mindestens drei Chars enthalten!", bg="black", fg="white",
                                font=("Eraser", 30))
